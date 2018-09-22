@@ -1,0 +1,9 @@
+//Converting font-size from .psd
+@function convertFontSize($pixelsToConvert) {
+  @return $pixelsToConvert*0.843194444;
+}
+
+//Converting disatnce from .psd
+@function convertDistance($pixelsToConvert) {
+  @return $pixelsToConvert*0.8425;
+}

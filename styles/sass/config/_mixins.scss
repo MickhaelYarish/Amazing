@@ -1,0 +1,74 @@
+@mixin proposition-block($background-color, $padTop, $padRight, $padBottom, $padLeft) {
+  .proposition-container {
+      height: convertDistance(515px);
+      background: $background-color;
+      color: $color-primary;
+      padding: convertDistance($padTop) convertDistance($padRight) convertDistance($padBottom) convertDistance($padLeft);
+      .proposition {
+          font-weight: bold;
+          font-size: convertFontSize(24px);
+          text-transform: uppercase;
+      }
+      .proposition-text {
+          line-height: 1.25;
+          margin-top: 26px;
+          word-spacing: 0.11em;
+          margin-left: -2px;
+          letter-spacing: -0.04em;
+          font-weight: 300;
+          font-size: convertFontSize(36px);
+      }
+      .proposition-link {
+          display: inline-block;
+          text-transform: uppercase;
+          border: 2px solid white;
+          color: white;
+          text-decoration: none;
+          font-size: convertFontSize(18px);
+          border-radius: 50px;
+          letter-spacing: 0.2em;
+          padding: 12px 20px;
+          margin-top: 12px;
+          font-weight: bold;
+          transition:line-height 0.4s;
+          &:hover{
+            line-height:2.4;
+          }
+      }
+  }
+
+  @media (max-width: 543px) {
+    .proposition-container {
+      text-align:center;
+        padding: 40px 20px;
+        .proposition-text{
+          text-align:center;
+        }
+
+      }
+  }
+  @media (min-width: 544px) and (max-width: 767px) {
+    .proposition-container {
+      text-align:center;
+        padding: 40px 80px 40px 80px;
+        .proposition-text{
+          text-align:center;
+        }
+      }
+
+
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .proposition-container {
+        padding: 80px 40px 40px 40px;
+      }
+
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .proposition-container {
+        padding: 120px 95px 120px 40px;
+      }
+
+   }
+
+}

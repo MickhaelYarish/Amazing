@@ -1,0 +1,199 @@
+.footer-row {
+    background: #212227;
+    margin: 0;
+    padding: 87px convertDistance(210px);
+    height: convertDistance(604px);
+    .sp-block {
+        margin-top: 80px;
+    }
+    .sponsor {
+        color: white;
+        width: convertDistance(80px);
+        height: convertDistance(80px);
+        border: 1px solid white;
+        display: inline-block;
+        text-align: center;
+        line-height: 4;
+        margin-right: convertDistance(20px);
+    }
+    .col-xs-12 {
+        padding: 0;
+    }
+    .text-block {
+        padding: 0 90px 0 0;
+        h1 {
+            &:nth-of-type(1) {
+                margin-bottom: 2px;
+            }
+        }
+    }
+    .information-block {
+        .col-xs-6:nth-of-type(2) {
+            margin-top: 50px;
+        }
+        .row {
+            padding: 0 5px;
+        }
+    }
+    form {
+        position: relative;
+        .form-group {
+            width: 27vw;
+            .form-control {
+                padding: 1rem 0.75rem;
+                font-size: convertFontSize(14px);
+                font-weight: 400;
+                text-transform: uppercase;
+                border-radius: 0;
+                width: 100%;
+                color: $color-secondary-lighter;
+                background-color: #4d4e52;
+                &:focus {
+                    border: 1px solid #4d4e52;
+                }
+            }
+        }
+        #submit-button {
+            position: absolute;
+            margin-left: -2px;
+            top: 1px;
+            height: 46px;
+            border-radius: 0;
+            color: $color-secondary-lighter;
+            background-color: #4d4e52;
+            border: none;
+        }
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    h1 {
+        font-size: convertFontSize(18px);
+        font-weight: bold;
+        color: $color-primary;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    li,
+    p {
+        font-size: convertFontSize(14px);
+        font-weight: 300;
+        color: $color-secondary-lighter;
+    }
+    a,
+    span {
+        @extend p;
+        text-transform: uppercase;
+    }
+    a {
+        display: inline-block;
+        margin-left: 12px;
+        margin-bottom: 4px;
+        font-weight: bold;
+    }
+    i.fa.fa-facebook {
+        padding-right: 4px;
+    }
+}
+@media (max-width: 543px) {
+    .footer-row {
+        .text-block {
+            padding: 0 10px 0 0;
+        }
+        padding: 0 27.925px 40px;
+        height: auto;
+        .information-block {
+            margin-top: 40px;
+        }
+        .information-block .col-xs-6:nth-of-type(2) {
+            margin-top: 0;
+        }
+        .sp-block {
+            margin-top: 40px;
+        }
+        .subscribe-block {
+            .form-group {
+                width: 80vw;
+            }
+            margin-top: 40px;
+        }
+        form {
+            #submit-button {
+                right: 25px;
+            }
+        }
+        .sponsor {
+            width: 37.4px;
+            height: 37.4px;
+            line-height: 3.5;
+            font-size: 10px;
+            margin-right: 10.85px;
+        }
+        a {
+            font-size: 12px;
+            padding: 10px 0;
+        }
+        i {
+            font-size: 12px;
+        }
+    }
+}
+@media (min-width: 544px) and (max-width: 767px) {
+    .footer-row {
+        .text-block {
+            padding: 0 30px 0 0;
+        }
+        padding: 0 27.925px;
+        height: 620px;
+        .information-block .col-xs-6:nth-of-type(2) {
+            margin-top: 0;
+        }
+        .sp-block {
+            margin-top: 40px;
+        }
+        .subscribe-block {
+            margin-top: 40px;
+        }
+        .sponsor {
+            width: 37.4px;
+            height: 37.4px;
+            line-height: 3.5;
+            font-size: 10px;
+            margin-right: 10.85px;
+        }
+        a {
+            font-size: 14px;
+            padding: 10px 0;
+        }
+        i {
+            font-size: 14px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer-row {
+        padding: 87px 87.925px;
+        height: 800px;
+        .information-block .col-xs-6:nth-of-type(2) {
+            margin-top: 0;
+        }
+        .sp-block {
+            margin-top: 40px;
+        }
+        .subscribe-block {
+            margin-top: 40px;
+        }
+        form #submit-button {}
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .footer-row {
+        padding: 87px 87.925px;
+    }
+}
+@media (min-width: 1200px) {
+    #submit-button {
+        right: 6px;
+    }
+}

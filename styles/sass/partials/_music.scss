@@ -1,0 +1,65 @@
+.music-row {
+    height: convertDistance(900px);
+    background-image: url('../images/studio.jpg');
+    width: 100%;
+    margin: 0;
+    .empty-block {
+        height: 100%;
+        background: #282b2f;
+    }
+    .music-block {
+        height: 56%;
+        background: #212227;
+        //padleft-48px
+        padding: convertDistance(140px) convertDistance(15px) convertDistance(96px) convertDistance(58px);
+        h2 {
+            font-size: convertFontSize(24px);
+            text-transform: uppercase;
+            color: $color-accent;
+            font-weight: bold;
+        }
+        h3 {
+            @extend h2;
+            font-size: convertFontSize(18px);
+            font-weight: 400;
+        }
+        p {
+            color: $color-primary;
+            font-size: convertFontSize(14px);
+            margin: 30px 0 0;
+        }
+        #audioControl {
+            font-weight: bold;
+            font-size: convertFontSize(18px);
+            color: $color-accent;
+            padding: 8px 14px;
+            border-radius: 50px;
+            border: 2px solid $color-accent;
+            margin-top: 40px;
+            display: inline-block;
+            text-transform: uppercase;
+            &:focus,
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media (max-width: 543px) {
+  .music-row {
+      height: convertDistance(450px);
+      .music-block {
+            height:100%;
+      }
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .music-row {
+        height: convertDistance(900px);
+        .music-block {
+              padding: 17.95px 12.6375px 10.88px 18.865px;
+        }
+    }
+  }

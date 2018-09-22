@@ -1,0 +1,12 @@
+.offers-row {
+    margin: 0;
+    .col-xs-12 {
+        padding: 0;
+    }
+    .spotify-block {
+        @include proposition-block($color-accent, 140px, 121px, 120px, 210px);
+    }
+    .itunes-block {
+        @include proposition-block(#282b2f, 140px, 225px, 120px, 60px);
+    }
+}

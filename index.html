@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Amazing</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <!--***********************************HEADER*********************************************-->
+
+    <header>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            &#9776;
+            <br>
+            <span>Menu</span>
+        </button>
+        <div class="navigation-container">
+            <div class="logo">
+                <span>/.</span>
+            </div>
+
+
+
+            <nav class="navbar navbar-light bg-faded">
+
+                <div class="collapse navbar-toggleable-xs-up " id="menu">
+
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Instagram <span class="sr-only">(current)</span></a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Spotify</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ITunes</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="introduction">
+            <h1>Amazing Dude.</h1>
+            <h1>Amazing Life.</h1>
+            <p>
+                Welcome to the personal site of <span class="person-name">John Doe</span>. A professional skier and a musician.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!--*******************************END OF HEADER*****************************************-->
+
+
+    <!--***************************************ABOUT*****************************************-->
+
+    <div class="container-fluid">
+        <div class="row about-row">
+            <div class="col-xs-12 col-md-6 img-container">
+                <img src="images/John-Doe.jpg" alt="John Doe's photo" />
+
+            </div>
+            <div class="col-xs-12 col-md-6 about-text-container">
+                <h2>Sed faucibus quis</h2>
+                <p>
+                    Fusce bibendum luctus massa, ut tincidunt lectus tincidunt in. Nulla tristique ipsum vitae lacus ullamcorper, at dictum nunc scelerisque.
+                </p>
+
+            </div>
+        </div>
+
+        <!--************************************END OF ABOUT*************************************-->
+
+
+        <!--************************************GALLERY*************************************-->
+
+        <div class="row gallery-row">
+            <div class="col-xs-6 col-md-3">
+                <img src="images/gallery/first-image.jpg" alt="Elevator" />
+
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <img src="images/gallery/second-image.jpg" alt="Skiing man" />
+
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <img src="images/gallery/third-image.jpg" alt="Skis" />
+
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <img src="images/gallery/fourth-image.jpg" alt="Mountains" />
+
+            </div>
+            <div class="col-xs-12 col-md-6 proposition-container">
+                <h2 class="proposition">Instagram</h2>
+                <p class="proposition-text">
+                    Etiam lacus dolor, tincidunt vitae nisi in, vulputate placerat odio. Pellentesque iaculis.
+                </p>
+                <a href="#" class="proposition-link">View on Instagram</a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <img src="images/gallery/fifth-image.jpg" alt="Skis" />
+
+            </div>
+            <div class="col-xs-6 col-md-3">
+            </div>
+        </div>
+    </div>
+
+
+    <!--************************************END OF GALLERY*************************************-->
+
+
+    <!--*******************************************MUSIC*******************************************-->
+    <div class="row music-row">
+        <div class="hidden-sm-down col-md-3 empty-block">
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3 music-block">
+            <h2>Self-effacing rage</h2>
+            <h3>Ft. Fascinating Collusion</h3>
+            <p>
+                Director: James G. Rohrer
+                <br> Production Company: Sycamore
+                <br> Producer: Laura S. Carlton
+                <br> Executive Producer: Jack M. Heckart
+            </p>
+
+
+            <audio id="yourAudio" preload='none'>
+                <source src="audio/guitar.mp3" type="audio/mpeg" />
+            </audio>
+            <a href="#" id="audioControl">Click to play &#9658;</a>
+        </div>
+    </div>
+
+
+
+    <!--******************************************END OF MUSIC*************************************-->
+
+
+    <!--********************************************OFFERS****************************************-->
+    <div class="row offers-row">
+        <div class="col-xs-12 col-md-6 spotify-block ">
+            <div class="proposition-container">
+                <h2 class="proposition">Spotify</h2>
+                <p class="proposition-text">
+                    Follow me, stream and add my songs to your Spotify playlist.
+                </p>
+                <a href="#" class="proposition-link">Follow on Spotify</a>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 itunes-block">
+            <div class="proposition-container">
+                <h2 class="proposition">ITunes</h2>
+                <p class="proposition-text">
+                    Buy and download my songs from iTunes.
+                </p>
+                <a href="#" class="proposition-link">Buy from ITunes</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--***************************************END OF OFFERS****************************************-->
+
+
+    <!--***************************************FOOTER****************************************-->
+    <footer>
+        <div class="row footer-row">
+            <div class="col-xs-12 col-sm-6 col-lg-4 text-block">
+                <h1>Amazing dude.</h1>
+                <h1>Amazing life.</h1>
+                <p>
+                    Mauris ornare lobortis arcu, at sodales dolor finibus nec. In convallis risus ligula, bibendum sagittis ante cursus vitae. Donec ornare, dui nec sagittis imperdiet, nunc eros dignissim augue, ut aliquam nibh felis sit amet leo. Vivamus eu tincidunt tellus.
+                    Vestibulum quis condimentum lectus, nec aliquet lectus. Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo
+                    nunc eu pellentesque. Phasellus in scelerisque elit, eu ultricies mauris.
+                </p>
+                <span>Ⓒ2015. all rights reserved.</span>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3 information-block">
+                <div class="row">
+                    <div class="col-xs-6 col-lg-12">
+                        <h1>Contact me</h1>
+                        <ul>
+                            <li>1242 Crwstview Terrace</li>
+                            <li>Artesia Wells, TX 78001</li>
+                        </ul>
+                        <ul>
+                            <li>Phone: 830-676-7974</li>
+                            <li>Email: halo@sitename.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-12">
+                        <h1>Follow me on</h1>
+                        <ul>
+                            <li>
+                                <i class="fa fa-facebook"></i><a href="#">Facebook</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-twitter"></i><a href="#">Twitter</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-instagram"></i><a href="#">Instagram</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-spotify"></i><a href="#">Spotify</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-5 subscribe-block">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-12">
+                        <h1>Subscribe</h1>
+                        <p>
+                            Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque.
+                        </p>
+                        <form class="form-inline" method="post">
+                            <div class="form-group">
+
+                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email address" required>
+                            </div>
+                            <button id="submit-button" type="submit" class="btn btn-primary form-submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-12 sp-block">
+                        <h1>Sponsor</h1>
+                        <div class="sponsor">
+                            LOGO
+                        </div>
+                        <div class="sponsor">
+                            LOGO
+                        </div>
+                        <div class="sponsor">
+                            LOGO
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </footer>
+    <!--***************************************END OF FOOTER****************************************-->
+
+
+
+    <!--Boobstrap and JQuery CDN-->
+    <script type="text/javascript" src="script/player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+</body>
+
+</html>
